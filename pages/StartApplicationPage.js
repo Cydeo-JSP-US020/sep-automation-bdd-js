@@ -41,6 +41,8 @@ export class StartApplicationPage extends BasePage {
       "//mat-label[text()='How did you hear about us?']"
     );
 
+    this.howDidYouHearAboutUsOptions = page.locator("mat-option");
+
     this.emailOptionFromDropDown = page.locator(
       "//mat-option/span[contains(text(), 'Email')]"
     );
@@ -182,6 +184,10 @@ export class StartApplicationPage extends BasePage {
         await this.twitterOptionFromDropDown.click();
         break;
     }
+  }
+
+  async openHowDidYouHearAboutUsDropDown() {
+    await this.howDidYouHearAboutUsDropDown.click();
   }
 
   async clickNextButton() {
