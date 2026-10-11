@@ -3,6 +3,6 @@ Week 05 Review:
 
     2. Agentic workflow (Zero Coding)
     
-    3. Fixtures (request, baseURL)
 
-    
+Class starts at 10:10 AM EST
+
