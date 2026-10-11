@@ -1,0 +1,8 @@
+Week 05 Review:
+    1. SEP Playwright BDD framework
+
+    2. Agentic workflow (Zero Coding)
+    
+    3. Fixtures (request, baseURL)
+
+    
