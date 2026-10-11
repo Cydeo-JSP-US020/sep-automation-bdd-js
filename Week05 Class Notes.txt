@@ -1,5 +1,5 @@
 Week 05 Review:
-    1. SEP Playwright BDD framework (2.5 hours)
+    1. SEP Playwright BDD framework
 
     2. Agentic workflow (Zero Coding)
     

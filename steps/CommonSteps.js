@@ -14,6 +14,12 @@ Given("user is on the enrollment page", async function () {
 });
 
 Given('user has completed the start application step', async function () {
-  
-
+  await startApplicationPage.enterFirstName("James");
+  await startApplicationPage.enterLastName("Bond");
+  await startApplicationPage.enterEmail("james@example.com");
+  await startApplicationPage.enterPhoneNumber("1234567890");
+  await startApplicationPage.selectHowDidYouHearAboutUs("Email");
+  await startApplicationPage.clickNextButton();
 });
+
+
