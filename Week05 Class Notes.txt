@@ -1,8 +1,13 @@
 Week 05 Review:
-    1. SEP Playwright BDD framework
+    1. SEP Playwright BDD framework (2.5 hours)
 
     2. Agentic workflow (Zero Coding)
     
 
 Class starts at 10:10 AM EST
 
+BDD Layers:
+
+    Business Layers
+
+    Technical Layer
