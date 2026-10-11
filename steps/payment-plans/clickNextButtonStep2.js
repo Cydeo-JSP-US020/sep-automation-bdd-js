@@ -36,7 +36,7 @@ Then('the start application step stepper circle should be green', async function
 Then('the upfront payment summary is displayed', async function () {
     await expect(paymentPlanPage.basePriceAmountUnderUpfront).toBeVisible();
     await expect(paymentPlanPage.upfrontDiscountAmountUnderUpfront).toBeVisible();
-    await expect(paymentPlanPage.totalAmountUnderUpfront).toBeVisible();
+    await expect(paymentPlanPage.subtotalAmountUnderUpfront).toBeVisible();
 });
 
 Then('the installments payment summary is displayed', async function () {
