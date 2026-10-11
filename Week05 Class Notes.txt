@@ -33,4 +33,23 @@ Agents: A specialist role with behavior, and allowed tools
 
 Skill: Reusable task instructions
 
+
+
+Next Week: 
+    TypeScript Modules
+    TypeScript version of BDD framework
+    TDD framework 
+
+Next Week' live class:
+    TypeScript VS JavaScript
+    TDD vs BDD
+
+    request & base url (one hour)
+
+    Antigravity:
+        sub Agents
+        browser
+        autonomous browser Agents
+        cli
+
     
