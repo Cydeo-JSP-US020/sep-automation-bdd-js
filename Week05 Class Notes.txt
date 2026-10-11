@@ -11,3 +11,8 @@ BDD Layers:
     Business Layers
 
     Technical Layer
+
+
+Page Object Model:
+    for each web page, we create seperate page classes to store its locators and page actions
+    Allows us to reuse the locators and page actions
