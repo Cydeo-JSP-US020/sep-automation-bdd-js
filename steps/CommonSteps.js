@@ -12,3 +12,8 @@ import {
 Given("user is on the enrollment page", async function () {
   await startApplicationPage.login();
 });
+
+Given('user has completed the start application step', async function () {
+  
+
+});
