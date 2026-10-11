@@ -27,5 +27,10 @@ BDD Automation Workflow of working on new user story:
     3. Generate step definitions of the feature scenarios -> complete definitions -> run the step definitions -> If passed, create PR
 
 
+Agents: A specialist role with behavior, and allowed tools
+
+        Agents can not re-run them selves
+
+Skill: Reusable task instructions
 
     
