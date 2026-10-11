@@ -1,5 +1,5 @@
 Week 05 Review:
-    1. SEP Playwright BDD framework (2.5 hours)
+    1. SEP Playwright BDD framework
 
     2. Agentic workflow (Zero Coding)
     
@@ -16,3 +16,16 @@ BDD Layers:
 Page Object Model:
     for each web page, we create seperate page classes to store its locators and page actions
     Allows us to reuse the locators and page actions
+
+
+BDD Automation Workflow of working on new user story:
+
+    1. create a new feature branch 
+    
+    2. Create Feature file -> analyze the requirments of the future -> explore the application -> write scenarios
+    
+    3. Generate step definitions of the feature scenarios -> complete definitions -> run the step definitions -> If passed, create PR
+
+
+
+    
