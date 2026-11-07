@@ -9,9 +9,13 @@ export class ReviewPaymentPage extends BasePage {
 
     this.paymentForm = page.locator("//form[@id='payment-form']");
 
-    this.paymentFrame = page.frameLocator("(//iframe[contains(@title, 'Secure payment')])[1]");
+    this.paymentFrame = page
+      .frameLocator('iframe[title*="Secure payment"]')
+      .first();
 
-    this.cardNumberInput = this.paymentFrame.locator("(//input[@type='text'])[1]");
+    this.cardNumberInput = this.paymentFrame.getByRole("textbox", {
+      name: "Card number",
+    });
     
     this.expiryDateInput = this.paymentFrame.locator("(//input[@type='text'])[2]");
     
@@ -67,7 +71,7 @@ export class ReviewPaymentPage extends BasePage {
     );
     this.payButton = page.locator("//button[@type='button']");
     this.cardNumberErrorMessage = this.paymentFrame.locator(
-      "//p[@id='Field-numberError' and @class='p-FieldError Error' and @role='alert']"
+      "#Field-numberError[role='alert']"
     );
     this.backButton = page.locator("(//span[@class='back-button'])[2]");
     this.footerText = page.locator(
@@ -98,6 +102,7 @@ export class ReviewPaymentPage extends BasePage {
    */
   async enterCardNumber(cardNumber = process.env.CARD_NUMBER) {
     await this.cardNumberInput.fill(cardNumber);
+    await this.cardNumberInput.press("Tab");
   }
 
   /**
