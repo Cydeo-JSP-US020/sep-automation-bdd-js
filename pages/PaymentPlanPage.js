@@ -11,14 +11,16 @@ export class PaymentPlanPage extends BasePage {
       "//*[text()='Choose a payment plan']"
     );
 
-    this.upfrontPaymentOption = page.locator(
-      "//span[@class='payment-type'][contains(text(),'Upfront')]"
+    this.upfrontPaymentOption = page
+      .locator("mat-expansion-panel-header")
+      .getByText("Upfront", { exact: true });
+
+    this.upfrontPaymentAmount = page.locator(
+      "span.discount-price:not(.ng-star-inserted)"
     );
 
-    this.upfrontPaymentAmount = page.locator("//span[@class='discount-price']");
-
     this.payOnceTextUpFront = page.locator(
-      "//span[@class='discount-price']/span"
+      "span.discount-price:not(.ng-star-inserted) > span"
     );
 
     this.upfrontPaymentFrame = page.locator(
@@ -86,11 +88,11 @@ export class PaymentPlanPage extends BasePage {
     );
 
     this.installmentsPaymentAmount = page.locator(
-      "//span[@class='discount-price ng-star-inserted']"
+      "span.discount-price.ng-star-inserted"
     );
 
     this.perMonthTextInstallments = page.locator(
-      "//span[@class='discount-price ng-star-inserted']/span"
+      "span.discount-price.ng-star-inserted > span"
     );
 
     this.couponAvailableBadgeInstallments = page.locator(
@@ -154,7 +156,7 @@ export class PaymentPlanPage extends BasePage {
     );
 
     this.paymentPlanBoxes = page.locator(
-      "//mat-accordion[@class='mat-accordion']/div/mat-expansion-panel/mat-expansion-panel-header"
+      "mat-accordion.mat-accordion > div > mat-expansion-panel > mat-expansion-panel-header"
     );
 
     this.step1 = page.locator("//div[@class='step-circle'][contains(.,'1')]");
