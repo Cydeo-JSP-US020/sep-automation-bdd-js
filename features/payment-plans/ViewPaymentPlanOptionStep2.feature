@@ -20,11 +20,17 @@ Feature: View payment plan options in Step 2   #! test only
 
 
 
-    #TODO: Create scenarios that cover all the acceptance criteria
-
     Background:
         Given user is on the enrollment page
-        And user has completed start application step
+        And user has completed the start application step
+
+    @sep17-1
+    Scenario: Display a single upfront payment option
+        Then exactly one upfront payment option displays the expected pay-once price
+
+    @sep17-2
+    Scenario: Display unique payment plans and installment details
+        Then available payment plans and installment details match the product data
 
 
 
