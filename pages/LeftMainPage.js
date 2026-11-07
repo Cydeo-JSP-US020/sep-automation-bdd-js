@@ -13,9 +13,11 @@ export class LeftMainPage extends BasePage {
 
     this.secureCheckout = page.locator("//p[@class='checkout-title']");
 
-    this.footerElements = page.locator(
-      "//a[contains(@href, 'https://cydeo.com/')]"
+    this.secureCheckoutLogo = this.secureCheckout.locator(
+      "img[src='assets/images/logo.svg']"
     );
+
+    this.footerElements = page.locator(".details-footer a");
 
     this.programName = page.locator("//p[@class='course-name']/a");
     
